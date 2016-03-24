@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "reset";
+
+// Variables and Mixins
+$effra: 'effra', sans-serif;
+$red: #D2002E;
+$dark-red: #bc042d;
+$white: #FFFFFF;
+$black: #272C2D;
+$dark-grey: #50535A;
+$light-grey: #E9EAE8;
+
+@mixin social-media {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 0.625em;
+  background-size: 180px;
+  background-image: url(../img/social-media.svg);
+}
+
+@mixin clearfix {
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+@import "grid";
+@import "type";
+@import "nav";
+@import "hero";
+@import "footer";
+@import "styles";

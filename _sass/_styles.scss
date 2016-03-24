@@ -1,0 +1,245 @@
+body {
+  background-color: #d8d8d8;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: $red;
+  color: $white;
+}
+
+.wrapper {
+  background-image: url(../img/bg-pattern.png);
+  background-repeat: repeat;
+  background-color: $light-grey;
+  margin: 0 auto;
+  max-width: 1440px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+// Video Embed
+
+.video__embed {
+  max-width: 1024px;
+  margin: auto;
+  position: relative;
+}
+
+.video__container {
+  position: absolute;
+  width: 380px;
+  top: -160px;
+  right: 0px;
+  z-index: 4;
+  box-sizing: content-box;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .video__container {
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 0;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .video {
+    margin: 1.5em 0;
+  }
+
+  .video iframe {
+    height: 100%;
+  }
+}
+
+
+// USP Panel
+
+.usp__header {
+  margin: 0 0 3em 10px;
+}
+
+.usp__header h1 {
+  background-color: $red;
+  display: inline;
+  color: $white;
+  font-size: 3em;
+  -webkit-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  -moz-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+}
+
+.usp__section {
+  position: relative;
+  background-color: $white;
+  max-width: 1024px;
+  margin: 0 auto 3.25em auto;
+  padding: 25px 0 0 0;
+}
+
+.usp__section--icon-fixed {
+  padding: 75px 0 0 0;
+}
+
+.usp__title {
+  margin: 0 20px 1.5em 78px;
+}
+
+.usp__title--fw {
+  margin: 0 0 1.5em 78px;
+}
+
+.usp__title h3 {
+  background-color: $red;
+  display: inline;
+  color: $white;
+  box-decoration-break: clone;
+  -webkit-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  -moz-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  position: relative;
+  &:after{
+    position:absolute;
+    content: " ";
+    width:1px;
+    left:-1px;
+    top:0;
+    height:100%;
+    background: $red;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+.usp__icon {
+  width: 68px;
+  padding: 10px;
+  background-color: $black;
+  margin-bottom: 1.5em;
+}
+
+.usp__icon--fixed {
+  position: absolute;
+  top: 19px;
+}
+
+.pullout-panel {
+  background-color: $red;
+  padding: 25px 25px 10px 25px;
+  margin: 0 0 25px 0;
+  box-sizing: border-box;
+}
+
+.pullout-panel__heading {
+  margin: 0.25em 0 1em 0.5em;
+}
+
+.pullout-panel__heading h2 {
+  background-color: $black;
+  color: $white;
+  box-decoration-break: clone;
+  -webkit-box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
+  -moz-box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
+  box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
+  display: inline;
+  position: relative;
+  &:after{
+    position:absolute;
+    content: " ";
+    width:1px;
+    left:-1px;
+    top:0;
+    height:100%;
+    background: $black;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+.pullout-panel__content {
+  color: $white;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .usp__section {
+    padding: 30px 0 0 0;
+    background-color: $light-grey;
+    margin: 0 0 1.5em 0;
+  }
+
+  .usp__content{
+    margin: 0 0 1.5em 0;
+  }
+
+  .usp__icon {
+    display: none;
+  }
+
+  .usp__title {
+    margin: 0 0 1em 10px;
+  }
+
+  .language-support {
+    margin: 0px;
+    }
+}
+
+
+// COURSE SELECTION SECTION
+
+.courses__section {
+  margin-bottom: 1.25em;
+}
+
+.course__img {
+  width: 100%;
+}
+
+.course__content {
+  background-color: $white;
+  margin: 0 0 1.875rem 0;
+  padding: 1.25em 1.25em 0.25em 1.25em;
+}
+
+.course__header {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 1024px) {
+  .courses__section {
+    margin-bottom: 1.5em;
+  }
+}
+
+
+// FINAL CTA
+
+.end-cta {
+  background-color: $red;
+  padding: 60px 0;
+  background-image: url(../img/bg-pattern-red.png);
+  background-repeat: repeat;
+}
+
+.sign-off {
+  color: $white;
+}
