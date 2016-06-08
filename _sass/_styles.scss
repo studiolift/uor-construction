@@ -1,6 +1,6 @@
 body {
   background-color: #d8d8d8;
-  background-image: url(../img/bg.png);
+  background-image: url(../web/multimediafiles/cme-bg.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -11,8 +11,6 @@ body {
 }
 
 .wrapper {
-  background-image: url(../img/bg-pattern.png);
-  background-repeat: repeat;
   background-color: $light-grey;
   margin: 0 auto;
   max-width: 1440px;
@@ -311,7 +309,7 @@ body {
 .logos__container {
   background-color: $red;
   padding: 60px 0;
-  background-image: url(../img/hero-img-2.png);
+  background-image: url(../web/multimediafiles/cme-hero-img-2.png);
   background-repeat: repeat;
   background-position: bottom left;
   -webkit-box-shadow: inset 0px 200px 216px -92px rgba(0,0,0,0.42);

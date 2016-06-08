@@ -5,7 +5,7 @@
 @import "reset";
 
 // Variables and Mixins
-$effra: 'effra', sans-serif;
+$effra: 'Effra W01', 'effra', sans-serif;
 $red: #D2002E;
 $dark-red: #bc042d;
 $white: #FFFFFF;
@@ -20,7 +20,7 @@ $light-grey: #E9EAE8;
   transition: all 0.3s ease 0s;
   margin-left: 0.625em;
   background-size: 180px;
-  background-image: url(../img/social-media.svg);
+  background-image: url(..//web/multimediafiles/cme-social-media.svg);
 }
 
 @mixin clearfix {
